@@ -78,8 +78,8 @@ public class Dataprocessing {
    //         return vehicle;
    //     }
 
-        PosEnt data = posrepo.poslatest();
-        return data.getVehiclename();
+        String data = posrepo.vehlatest();
+        return data;
 
 
 
