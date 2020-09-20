@@ -10,4 +10,7 @@ public interface PosRepository extends CrudRepository<PosEnt,Integer> {
 
     @Query(nativeQuery = true,value = "call poslatest")
     PosEnt poslatest();
+    
+    @Query(nativeQuery = true,value = "call vehiclesc")
+    String vehlatest();
 }
