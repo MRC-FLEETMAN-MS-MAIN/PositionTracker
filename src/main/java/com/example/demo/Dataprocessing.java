@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
-@Repository
+@Service
 public class Dataprocessing {
 
     @Autowired
