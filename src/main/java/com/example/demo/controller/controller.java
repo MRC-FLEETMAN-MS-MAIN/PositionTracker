@@ -40,24 +40,11 @@ public class controller {
 	public ResponseEntity<Position> getlatestpos(@PathVariable("message") String message) {
 
 		try {
-		//	Position pos = dataservice.getlatestpos(message);
-		//	return ResponseEntity.status(HttpStatus.OK).body(pos);
-
-
 			Position posdb = dataservice.getposdb();
 		//	System.out.println("The lat is " + posdb.getLat().toString());
 		//	System.out.println("The longt is " + posdb.getLongitude().toString());
 			return ResponseEntity.status(HttpStatus.OK).body(posdb);
 		}
-
-		//Define Custom exception later
-		/*
-		catch(Exception e) {
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-		}  */
-
-
-
 
 		catch(Exception e) {
 			System.out.println("Problem with SQL FETCHING");

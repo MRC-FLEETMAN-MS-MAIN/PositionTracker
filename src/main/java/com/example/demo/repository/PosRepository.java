@@ -3,7 +3,6 @@ package com.example.demo.repository;
 import com.example.demo.entity.PosEnt;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Service;
 
 
 public interface PosRepository extends CrudRepository<PosEnt,Integer> {
